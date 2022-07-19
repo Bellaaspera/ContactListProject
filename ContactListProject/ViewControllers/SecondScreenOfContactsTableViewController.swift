@@ -32,6 +32,7 @@ class SecondScreenOfContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondScreenCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
+        
         for _ in 0...numberOfSections(in: tableView.self) {
             if indexPath.row == 0 {
                 content.text = "✆ " + persons[indexPath.section].phoneNumber
@@ -44,5 +45,7 @@ class SecondScreenOfContactsTableViewController: UITableViewController {
         return cell
     }
     
-
+    // MARK: - Table view delegate
+    
+   
 }
