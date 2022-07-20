@@ -22,22 +22,24 @@ struct DataStore {
 
 let data = DataStore(
     names: [
-        "Paul", "Dan", "Kitty", "Ivan", "Jack", "Han",
+        "Paul", "Dan", "Kitty", "Ivan", "Jack", "Han", "Bruce",
         "Stewart", "Hannah", "Lora", "Steve", "Natasha", "Comander"
-           ],
+    ].shuffled(),
     surNames: [
-        "Hello", "Sparrow", "Solo", "Verkhoven", "Brown",
-        "Little", "Racoon", "Montana", "Dern", "Rogers", "Romanoff", "Shepard"
-    ],
+        "Hello", "Sparrow", "Solo", "Verkhoven", "Brown", "Wayn",
+        "Little", "Racoon", "Montana", "Dern", "Rogers", "Romanoff",
+        "Shepard"
+    ].shuffled(),
     phoneNumbers: [
         "768677098", "654098123", "985430711", "220875433",
         "001284532", "451046873", "645301874", "123987640",
-        "994733001", "823004477", "899869600", "666444932"
-    ],
+        "994733001", "823004477", "899869600", "666444932",
+        "007564003"
+    ].shuffled(),
     emails: [
         "scary@gmail.com", "codeDaVinchi@yahoo.com", "yooohooo@gmail.com",
         "rrrr@ya.ru", "wheresmyboat@someaquatiry.com", "milenium@falcon.com",
-        "chese@toeveryone.uk", "blahblah@blah.us",  "moviestar@gmail.com",
-        "ilovemyjob@avengers.us", "widow@mail.ru", "n7@alians.com"
-    ]
+        "cheese@toeveryone.uk", "blahblah@blah.us",  "moviestar@gmail.com",
+        "ilovemyjob@avengers.us", "widow@mail.ru", "n7@alians.com", "batman@gotem.com"
+    ].shuffled()
 )

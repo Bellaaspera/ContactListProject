@@ -27,6 +27,7 @@ class FirstScreenOfContactsTableViewController: UITableViewController {
         let person = persons[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
+        content.image = UIImage(systemName: "person")
         cell.contentConfiguration = content
         return cell
     }
