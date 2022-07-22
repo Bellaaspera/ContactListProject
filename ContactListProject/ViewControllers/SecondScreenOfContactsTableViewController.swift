@@ -9,11 +9,7 @@ import UIKit
 
 class SecondScreenOfContactsTableViewController: UITableViewController {
 
-    private let persons = Person.getPersons()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var persons: [Person] = []
 
     // MARK: - Table view data source
 
@@ -26,7 +22,7 @@ class SecondScreenOfContactsTableViewController: UITableViewController {
     } 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        persons[section].rows.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -9,13 +9,8 @@ import UIKit
 
 class FirstScreenOfContactsTableViewController: UITableViewController {
 
-    private let persons = Person.getPersons()
+    var persons: [Person] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

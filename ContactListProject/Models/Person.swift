@@ -15,40 +15,30 @@ struct Person {
         name + " " + surName
     }
     
+    var rows: [String] {
+        [phoneNumber, email]
+    }
+    
     static func getPersons() -> [Person] {
         var randomPersons: [Person] = []
-//        VARIANT 1
-//        for _ in 0...data.names.count {
-//            randomPersons.append(
-//                Person(
-//                name: data.names[Int.random(in: 0..<data.names.count)],
-//                surName: data.surNames[Int.random(in: 0..<data.surNames.count)],
-//                phoneNumber: data.phoneNumbers[Int.random(in: 0..<data.phoneNumbers.count)],
-//                email: data.emails[Int.random(in: 0..<data.emails.count)]
-//                )
-//            )
-//        }
-//        VARIANT 2
-//        for (_, _) in zip(data.names, data.surNames) {
-//            for (_, _) in zip(data.phoneNumbers, data.emails) {
-//            randomPersons.append(
-//                Person(
-//                    name: data.names[Int.random(in: 0..<data.names.count)],
-//                    surName: data.surNames[Int.random(in: 0..<data.surNames.count)],
-//                    phoneNumber: data.phoneNumbers[Int.random(in: 0..<data.phoneNumbers.count)],
-//                    email: data.emails[Int.random(in: 0..<data.emails.count)]
-//                )
-//            )
-//            }
-//        VARIANT 3
-        let arrayIndex = 0
-        for index in arrayIndex..<data.names.count {
+        let names = DataStore.shared.names.shuffled()
+        let surNames = DataStore.shared.surNames.shuffled()
+        let phoneNumbers = DataStore.shared.phoneNumbers.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        
+        let arrayIndex = min(
+            names.count,
+            surNames.count,
+            phoneNumbers.count,
+            emails.count)
+        
+        for index in 0..<arrayIndex {
             randomPersons.append(
                 Person(
-                    name: data.names[index],
-                    surName: data.surNames[index],
-                    phoneNumber: data.phoneNumbers[index],
-                    email: data.emails[index]
+                    name: names[index],
+                    surName: surNames[index],
+                    phoneNumber: phoneNumbers[index],
+                    email: emails[index]
                 )
             )
         }

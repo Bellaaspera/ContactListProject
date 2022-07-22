@@ -3,6 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="1553" y="67"/>
         </scene>
-        <!--Details Of Contacts View Controller-->
+        <!--Contact Details-->
         <scene sceneID="XcN-Zs-D1j">
             <objects>
                 <viewController id="eYt-Al-Kvt" customClass="DetailsOfContactsViewController" customModule="ContactListProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +64,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cET-oI-r3g">
                                         <rect key="frame" x="0.0" y="0.0" width="130.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wfk-6k-sOI">
@@ -105,7 +106,7 @@
                             <constraint firstItem="iji-Zg-HDd" firstAttribute="top" secondItem="VaT-Ih-vsP" secondAttribute="top" constant="80" id="mT0-Pa-g4N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="scB-8H-ebw"/>
+                    <navigationItem key="navigationItem" title="Contact Details" largeTitleDisplayMode="always" id="scB-8H-ebw"/>
                     <connections>
                         <outlet property="emailLabel" destination="P4y-il-EtT" id="ph5-bn-aLo"/>
                         <outlet property="nameLabel" destination="cET-oI-r3g" id="pIf-Wa-btu"/>
@@ -116,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="2357" y="381"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Screen Controller-->
         <scene sceneID="xpn-dd-kHH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oJD-vN-jxz" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oJD-vN-jxz" customClass="TabBarScreenController" customModule="ContactListProject" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUx-g9-PU2">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -180,7 +181,10 @@
         <scene sceneID="LHU-1i-5qi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZWk-lt-1oj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="WRo-VI-ZD0"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="WRo-VI-ZD0">
+                        <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" systemColor="systemGreenColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Fqd-Qk-MuM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
@@ -199,7 +203,10 @@
         <scene sceneID="CHo-zH-Qdh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bMG-8F-dji" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="vrf-13-bJL"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="vrf-13-bJL">
+                        <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" systemColor="systemGreenColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7YZ-uh-8Zj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
@@ -227,9 +234,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

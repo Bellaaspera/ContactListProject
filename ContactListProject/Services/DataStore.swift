@@ -6,40 +6,33 @@
 //
 
 
-struct DataStore {
-    let names: [String]
-    let surNames: [String]
-    let phoneNumbers: [String]
-    let emails: [String]
+class DataStore {
     
-    init(names: [String], surNames: [String], phoneNumbers: [String], emails: [String]) {
-        self.names = names
-        self.surNames = surNames
-        self.phoneNumbers = phoneNumbers
-        self.emails = emails
-    }
-}
-
-let data = DataStore(
-    names: [
+    static let shared = DataStore()
+    
+    let names = [
         "Paul", "Dan", "Kitty", "Ivan", "Jack", "Han", "Bruce",
-        "Stewart", "Hannah", "Lora", "Steve", "Natasha", "Comander"
-    ].shuffled(),
-    surNames: [
+        "Stewart", "Hannah", "Lora", "Steve", "Natasha", "Comander",
+        "Luke", "Paddington", "Indiana"
+    ]
+    let surNames = [
         "Hello", "Sparrow", "Solo", "Verkhoven", "Brown", "Wayn",
         "Little", "Racoon", "Montana", "Dern", "Rogers", "Romanoff",
-        "Shepard"
-    ].shuffled(),
-    phoneNumbers: [
+        "Shepard", "Skywalker", "Brown", "Johnes"
+    ]
+    let phoneNumbers = [
         "768677098", "654098123", "985430711", "220875433",
         "001284532", "451046873", "645301874", "123987640",
         "994733001", "823004477", "899869600", "666444932",
-        "007564003"
-    ].shuffled(),
-    emails: [
+        "007564003", "676729101", "001101010", "303094589"
+    ]
+    let emails = [
         "scary@gmail.com", "codeDaVinchi@yahoo.com", "yooohooo@gmail.com",
         "rrrr@ya.ru", "wheresmyboat@someaquatiry.com", "milenium@falcon.com",
         "cheese@toeveryone.uk", "blahblah@blah.us",  "moviestar@gmail.com",
-        "ilovemyjob@avengers.us", "widow@mail.ru", "n7@alians.com", "batman@gotem.com"
-    ].shuffled()
-)
+        "ilovemyjob@avengers.us", "widow@mail.ru", "n7@alians.com", "batman@gotem.com",
+        "dethstar@determinated.jedi", "auntlucy@wheresmyjam.su", "low@blow.com"
+    ]
+    
+    private init(){}
+}

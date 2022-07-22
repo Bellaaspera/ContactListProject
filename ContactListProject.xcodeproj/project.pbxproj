@@ -17,6 +17,7 @@
 		7026A2E52886DCE100249F1D /* FirstScreenOfContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026A2E42886DCE100249F1D /* FirstScreenOfContactsTableViewController.swift */; };
 		7026A2E72886DD0300249F1D /* SecondScreenOfContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026A2E62886DD0300249F1D /* SecondScreenOfContactsTableViewController.swift */; };
 		7026A2E92886DD8B00249F1D /* DetailsOfContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026A2E82886DD8B00249F1D /* DetailsOfContactsViewController.swift */; };
+		7026A321288AE65A00249F1D /* TabBarScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026A320288AE65A00249F1D /* TabBarScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7026A2E42886DCE100249F1D /* FirstScreenOfContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenOfContactsTableViewController.swift; sourceTree = "<group>"; };
 		7026A2E62886DD0300249F1D /* SecondScreenOfContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenOfContactsTableViewController.swift; sourceTree = "<group>"; };
 		7026A2E82886DD8B00249F1D /* DetailsOfContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOfContactsViewController.swift; sourceTree = "<group>"; };
+		7026A320288AE65A00249F1D /* TabBarScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		7026A2DB2886DB4800249F1D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7026A320288AE65A00249F1D /* TabBarScreenController.swift */,
 				7026A2E42886DCE100249F1D /* FirstScreenOfContactsTableViewController.swift */,
 				7026A2E62886DD0300249F1D /* SecondScreenOfContactsTableViewController.swift */,
 				7026A2E82886DD8B00249F1D /* DetailsOfContactsViewController.swift */,
@@ -197,6 +200,7 @@
 				7026A2C82886D3A500249F1D /* AppDelegate.swift in Sources */,
 				7026A2CA2886D3A500249F1D /* SceneDelegate.swift in Sources */,
 				7026A2E92886DD8B00249F1D /* DetailsOfContactsViewController.swift in Sources */,
+				7026A321288AE65A00249F1D /* TabBarScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
